@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iZhureq — art therapy for children with special health needs</title>
+  <meta name="description" content="iZhureq is a youth volunteer organization from Astana bringing art therapy to children with heart conditions, autism and cerebral palsy. Founded by Ayana Bektassova." />
+  <meta name="theme-color" content="#B31829" />
+  <link rel="canonical" href="https://izhureq.run.place/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="iZhureq — a brave heart for every child" />
+  <meta property="og:description" content="Art therapy for children with heart conditions, autism and cerebral palsy. 270+ children, 3 partner centers, a national competition for inclusive cities." />
+  <meta property="og:image" content="https://izhureq.run.place/assets/img/og.jpg" />
+  <meta property="og:url" content="https://izhureq.run.place/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Inter+Tight:wght@400;500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400..900;1,7..72,400..900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/hero-poster.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#story" data-i18n="skip">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="iZhureq — home">
+      <img src="assets/logos/izhureq.png" alt="" width="512" height="512" />
+      <span>iZhureq</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#story" data-i18n="nav.story">Story</a>
+      <a href="#sessions" data-i18n="nav.sessions">Sessions</a>
+      <a href="#city" data-i18n="nav.city">City for Everyone</a>
+      <a href="#journey" data-i18n="nav.journey">Journey</a>
+      <a href="#team" data-i18n="nav.team">Team</a>
+    </nav>
+    <div class="nav__end">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="btn btn--small" href="#join" data-i18n="nav.join">Join us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO ------------------------------------------------------------ -->
+    <section class="hero" id="top">
+      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" aria-hidden="true"
+        data-landscape="assets/video/hero.mp4" data-portrait="assets/video/hero-portrait.mp4" data-poster-portrait="assets/img/hero-poster-portrait.jpg">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--light" data-i18n="hero.eyebrow">Volunteer organization · Astana, Kazakhstan · since 2024</p>
+        <h1 class="hero__title">
+          <span data-i18n="hero.title1">A brave heart</span><br />
+          <em data-i18n="hero.title2">for every child.</em>
+        </h1>
+        <p class="hero__lead" data-i18n="hero.lead">
+          iZhureq brings art therapy to children with heart conditions, autism and cerebral&nbsp;palsy — and works to make the city itself a place where they belong.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#join" data-i18n="hero.cta">Volunteer with us</a>
+          <a class="link-arrow" href="#story"><span data-i18n="hero.story">How it started</span> <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero__note" aria-hidden="true">
+        <span class="hand">i + zhürek</span>
+        <svg viewBox="0 0 120 60" class="doodle"><path d="M6 40 C 30 10, 70 8, 108 30 M 92 18 L 110 31 L 92 42" /></svg>
+        <span class="hand hand--big" data-i18n="hero.note">brave heart</span>
+      </div>
+
+      <button class="hero__pause" id="heroPause" type="button" aria-pressed="false">
+        <span class="sr-only" data-i18n="hero.pause">Pause background video</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="4" width="3.5" height="12" rx="1" /><rect x="11.5" y="4" width="3.5" height="12" rx="1" /></svg>
+      </button>
+    </section>
+
+    <!-- MARQUEE --------------------------------------------------------- -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>draw</span><i>✱</i><span>play</span><i>✱</i><span>make</span><i>✱</i><span>belong</span><i>✱</i>
+        <span>draw</span><i>✱</i><span>play</span><i>✱</i><span>make</span><i>✱</i><span>belong</span><i>✱</i>
+        <span>draw</span><i>✱</i><span>play</span><i>✱</i><span>make</span><i>✱</i><span>belong</span><i>✱</i>
+      </div>
+    </div>
+
+    <!-- STORY ----------------------------------------------------------- -->
+    <section class="section story" id="story">
+      <header class="section__head" data-reveal>
+        <span class="section__num">01</span>
+        <span class="eyebrow" data-i18n="story.eyebrow">Why we exist</span>
+      </header>
+
+      <div class="story__grid">
+        <figure class="polaroid polaroid--big story__photo" style="--r: -3deg" data-reveal>
+          <img src="assets/img/aruana.jpg" alt="Aruana, a young girl in a straw hat, smiling" width="799" height="1000" loading="lazy" />
+          <figcaption class="hand" data-i18n="story.caption">Aruana</figcaption>
+          <svg viewBox="0 0 200 200" class="doodle doodle--heart" aria-hidden="true"><path d="M100 170 C 40 125, 15 90, 30 58 C 45 25, 88 28, 100 62 C 112 28, 155 25, 170 58 C 185 90, 160 125, 100 170 Z" /></svg>
+        </figure>
+
+        <div class="story__text">
+          <h2 class="display" data-reveal data-i18n="story.title">It started with&nbsp;Aruana.</h2>
+          <p class="lead" data-reveal data-i18n="story.p1">
+            A few years ago, Ayana Bektassova was babysitting her younger cousin Aruana, who has developmental delays. One thing stayed with her: almost no one invited kids like Aruana to draw, to play, or to make something of their own.
+          </p>
+          <blockquote class="pull" data-reveal>
+            <p data-i18n="story.quote">They were treated — but rarely&nbsp;<span class="strike">included</span>.</p>
+          </blockquote>
+          <p data-reveal data-i18n="story.p2">
+            So she started iZhureq with classmates at NIS IB Astana. The name comes from Kazakh: <em>zhürek</em> means heart — together, <em>a brave heart</em>. Today it is a student-led organization with five departments and a team of volunteers who show up for children every month.
+          </p>
+          <p class="signature" data-reveal>
+            <span class="hand" data-i18n="story.sign">Ayana Bektassova</span>
+            <span class="signature__role" data-i18n="story.role">Founder, iZhureq</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SESSIONS -------------------------------------------------------- -->
+    <section class="section sessions" id="sessions">
+      <header class="section__head" data-reveal>
+        <span class="section__num">02</span>
+        <span class="eyebrow" data-i18n="sessions.eyebrow">What we do</span>
+      </header>
+
+      <div class="sessions__intro">
+        <h2 class="display" data-reveal data-i18n="sessions.title">Art therapy that leaves every child with something&nbsp;<em>they made</em>.</h2>
+        <p class="lead" data-reveal data-i18n="sessions.lead">
+          We run creative sessions in hospitals and rehabilitation centers. Different art techniques help children develop fine motor skills, ease stress, and say what is hard to say out loud.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step__num">01</span>
+          <h3 data-i18n="step1.t">Train first</h3>
+          <p data-i18n="step1.p">Before anyone works with children, our volunteers train with professional psychologists. Good intentions are not enough when a child is vulnerable.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">02</span>
+          <h3 data-i18n="step2.t">Make something</h3>
+          <p data-i18n="step2.p">Painting, handprints, paper fans, collage — simple techniques adapted to each child's age and condition.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">03</span>
+          <h3 data-i18n="step3.t">Draw &amp; swap</h3>
+          <p data-i18n="step3.p">Every five minutes, drawings change hands. Each picture ends up being something we made together.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">04</span>
+          <h3 data-i18n="step4.t">Play &amp; music</h3>
+          <p data-i18n="step4.p">Between rounds — games and music, so the room stays light and every child feels at ease.</p>
+        </li>
+      </ol>
+
+      <div class="collage" aria-label="Photos from our sessions">
+        <figure class="polaroid" style="--r: -4deg" data-reveal><img src="assets/img/umc_close.jpg" alt="Volunteers helping a girl paint at the UMC Heart Center" loading="lazy" width="1200" height="1600" /></figure>
+        <figure class="polaroid" style="--r: 3deg" data-reveal><img src="assets/img/kids_drawings.jpg" alt="Children and volunteers holding up their drawings" loading="lazy" width="1600" height="1200" /><figcaption class="hand" data-i18n="collage.c1">our gallery day</figcaption></figure>
+        <figure class="polaroid" style="--r: -2deg" data-reveal><img src="assets/img/ncdr_film1.jpg" alt="A volunteer and a teenager painting with watercolours" loading="lazy" width="1066" height="1600" /></figure>
+        <figure class="polaroid" style="--r: 5deg" data-reveal><img src="assets/img/dino_wall.jpg" alt="A painting session in the library with a dinosaur mural" loading="lazy" width="1200" height="1600" /></figure>
+        <figure class="polaroid" style="--r: -5deg" data-reveal><img src="assets/img/crafts_group.jpg" alt="Volunteers and children showing paper crafts" loading="lazy" width="1600" height="1200" /><figcaption class="hand" data-i18n="collage.c2">paper fans!</figcaption></figure>
+      </div>
+
+      <div class="partners">
+        <h3 class="eyebrow" data-reveal data-i18n="partners.title">Where we work</h3>
+        <ul class="partners__list">
+          <li data-reveal>
+            <img src="assets/logos/umc.jpg" alt="UMC Heart Center logo" width="400" height="400" loading="lazy" />
+            <div><strong>UMC Heart Center</strong><span data-i18n="partners.umc">Children with heart conditions and after surgery</span></div>
+          </li>
+          <li data-reveal>
+            <img src="assets/logos/nccr.jpg" alt="National Center for Children's Rehabilitation logo" width="400" height="347" loading="lazy" />
+            <div><strong data-i18n="partners.nccrName">National Center for Children's Rehabilitation</strong><span data-i18n="partners.nccr">Children in rehabilitation, including cerebral palsy</span></div>
+          </li>
+          <li data-reveal>
+            <img src="assets/logos/orda.jpg" alt="Orda Autism Center logo" width="400" height="400" loading="lazy" />
+            <div><strong data-i18n="partners.ordaName">Orda Autism Center</strong><span data-i18n="partners.orda">Children with autism spectrum disorder</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NUMBERS --------------------------------------------------------- -->
+    <section class="numbers" aria-labelledby="numbersTitle">
+      <h2 class="sr-only" id="numbersTitle">iZhureq in numbers</h2>
+      <div class="numbers__grid">
+        <div class="stat" data-reveal><span class="stat__n"><span data-count="270">270</span>+</span><span class="stat__l" data-i18n="num.children">children joined our sessions</span></div>
+        <div class="stat" data-reveal><span class="stat__n" data-count="3">3</span><span class="stat__l" data-i18n="num.centers">medical &amp; rehab centers</span></div>
+        <div class="stat" data-reveal><span class="stat__n" data-count="400">400</span><span class="stat__l" data-i18n="num.students">students designed for inclusion</span></div>
+        <div class="stat" data-reveal><span class="stat__n" data-count="10">10</span><span class="stat__l" data-i18n="num.cities">cities in City for Everyone</span></div>
+        <div class="stat" data-reveal><span class="stat__n">$<span data-count="2500">2,500</span></span><span class="stat__l" data-i18n="num.grant">IB Global Youth Action Fund grant</span></div>
+        <div class="stat" data-reveal><span class="stat__n" data-count="5">5</span><span class="stat__l" data-i18n="num.depts">departments, all run by students</span></div>
+      </div>
+    </section>
+
+    <!-- CITY FOR EVERYONE ----------------------------------------------- -->
+    <section class="section city" id="city">
+      <header class="section__head section__head--light" data-reveal>
+        <span class="section__num">03</span>
+        <span class="eyebrow eyebrow--light" data-i18n="city.eyebrow">Beyond hospital walls</span>
+      </header>
+
+      <div class="city__grid">
+        <div class="city__art" data-reveal>
+          <img src="assets/img/cfe-print.jpg" alt="Illustration of two hands holding a city — the City for Everyone emblem" width="480" height="500" loading="lazy" />
+        </div>
+        <div class="city__text">
+          <h2 class="display display--light" data-reveal data-i18n="city.title">City for <em>Everyone</em></h2>
+          <p class="lead lead--light" data-reveal data-i18n="city.lead">
+            In 2025 we took iZhureq into the city itself. City for Everyone is a national competition where school teams design technical solutions that make urban spaces calmer, safer and more welcoming for children with autism spectrum disorder.
+          </p>
+          <dl class="facts" data-reveal>
+            <div><dt data-i18n="city.f1t">Who</dt><dd data-i18n="city.f1">Teams of 3–4 students, grades 7–8 and 9–11</dd></div>
+            <div><dt data-i18n="city.f2t">Round 1</dt><dd data-i18n="city.f2">A two-minute video: the problem and a solution. 100+ teams, about 400 students from 10 cities</dd></div>
+            <div><dt data-i18n="city.f3t">Final</dt><dd data-i18n="city.f3">24 teams pitched to a jury on 11 October 2025 at NIS IB Astana</dd></div>
+            <div><dt data-i18n="city.f4t">Prizes</dt><dd data-i18n="city.f4">100,000 / 70,000 / 50,000 ₸ in each age category — to keep building the idea</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="filmstrip" aria-label="Photos from the City for Everyone final">
+        <figure data-reveal><img src="assets/img/cfe_screen.jpg" alt="The stage screen at the City for Everyone final" loading="lazy" width="1600" height="1199" /></figure>
+        <figure data-reveal><img src="assets/img/cfe_pitch1.jpg" alt="A team presenting their idea to the jury" loading="lazy" width="1600" height="1200" /></figure>
+        <figure data-reveal><img src="assets/img/cfe_winners1.jpg" alt="Winning team with the trophy and organizers" loading="lazy" width="1600" height="1200" /></figure>
+        <figure data-reveal><img src="assets/img/cfe_group.jpg" alt="All finalists and volunteers on stage" loading="lazy" width="1600" height="1200" /></figure>
+      </div>
+    </section>
+
+    <!-- JOURNEY --------------------------------------------------------- -->
+    <section class="section journey" id="journey">
+      <header class="section__head" data-reveal>
+        <span class="section__num">04</span>
+        <span class="eyebrow" data-i18n="journey.eyebrow">Our journey</span>
+      </header>
+      <h2 class="display" data-reveal data-i18n="journey.title">From one idea to a national&nbsp;organization.</h2>
+
+      <ol class="timeline">
+        <li class="tl" data-reveal>
+          <time datetime="2024-11" data-i18n="tl1.d">Nov 2024</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl1.t">First art therapy session</h3>
+            <p data-i18n="tl1.p">The National Center for Children's Rehabilitation welcomes our volunteers. Children paint, then play games to music between rounds.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: 3deg"><img src="assets/img/ncdr_group.jpg" alt="Children and volunteers at the National Center for Children's Rehabilitation" loading="lazy" width="1200" height="1600" /></figure>
+        </li>
+        <li class="tl" data-reveal>
+          <time datetime="2025-02" data-i18n="tl2.d">Feb 2025</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl2.t">Recognized by the Ministry</h3>
+            <p data-i18n="tl2.p">The Ministry of Enlightenment of Kazakhstan and its Department of Inclusive and Special Education award our founders letters of gratitude.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: -3deg"><img src="assets/img/ministry-letter.jpg" alt="Letter of gratitude from the Ministry of Enlightenment" loading="lazy" width="779" height="1100" /></figure>
+        </li>
+        <li class="tl" data-reveal>
+          <time datetime="2025-03" data-i18n="tl3.d">Mar 2025</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl3.t">The team grows</h3>
+            <p data-i18n="tl3.p">We open recruitment for art, media and organization departments. Volunteers get real responsibility — and an official certificate for their work.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: 4deg"><img src="assets/img/badges.jpg" alt="Founder and staff volunteer badges" loading="lazy" width="1200" height="1600" /></figure>
+        </li>
+        <li class="tl" data-reveal>
+          <time datetime="2025-04" data-i18n="tl4.d">Apr 2025</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl4.t">Talking about autism</h3>
+            <p data-i18n="tl4.p">A charity fair and a workshop for students, “ASD: main difficulties and stereotypes”, with art therapist and Orda methodologist Kuldraikhan Kanybekovna. 100% of the fair went to iZhureq.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: -2deg"><img src="assets/img/kids-artworks.jpg" alt="Children's paintings and colour pencils" loading="lazy" width="640" height="640" /></figure>
+        </li>
+        <li class="tl tl--accent" data-reveal>
+          <time datetime="2025-06" data-i18n="tl5.d">Jun 2025</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl5.t">IB Global Youth Action Fund winner</h3>
+            <p data-i18n="tl5.p">Selected from 1,100+ projects worldwide: a $2,500 grant, skill-building programs and the GYAF alumni community. Our work supports SDG 3 and SDG 10.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: 3deg"><img src="assets/img/ib-gyaf.jpg" alt="2025 Winner of the IB Global Youth Action Fund announcement" loading="lazy" width="886" height="1100" /></figure>
+        </li>
+        <li class="tl" data-reveal>
+          <time datetime="2025-10" data-i18n="tl6.d">Sep–Oct 2025</time>
+          <div class="tl__body">
+            <h3 data-i18n="tl6.t">City for Everyone</h3>
+            <p data-i18n="tl6.p">Our first national competition: 100+ teams, about 400 students, and a final on 11 October.</p>
+          </div>
+          <figure class="polaroid polaroid--small" style="--r: -4deg"><img src="assets/img/cfe_winners2.jpg" alt="Winners holding certificates and a trophy" loading="lazy" width="1600" height="1199" /></figure>
+        </li>
+      </ol>
+    </section>
+
+    <!-- TEAM ------------------------------------------------------------ -->
+    <section class="section team" id="team">
+      <header class="section__head" data-reveal>
+        <span class="section__num">05</span>
+        <span class="eyebrow" data-i18n="team.eyebrow">The people</span>
+      </header>
+
+      <div class="founder">
+        <figure class="polaroid polaroid--big founder__photo" style="--r: 2deg" data-reveal>
+          <img src="assets/img/ayana.jpg" alt="Ayana Bektassova, founder of iZhureq, in a graduation gown" width="853" height="1280" loading="lazy" />
+          <figcaption class="hand" data-i18n="team.caption">this is Ayana</figcaption>
+          <svg viewBox="0 0 120 80" class="doodle doodle--arrow" aria-hidden="true"><path d="M110 70 C 80 66, 40 50, 18 14 M 14 34 L 16 12 L 36 20" /></svg>
+        </figure>
+        <div class="founder__text">
+          <p class="eyebrow" data-reveal data-i18n="team.role">Founder</p>
+          <h2 class="display" data-reveal data-i18n="team.name">Ayana Bektassova</h2>
+          <p class="lead" data-reveal data-i18n="team.bio">
+            Ayana founded iZhureq after seeing how rarely children like her cousin were invited to create. She built the volunteer team, trained it with psychologists, brought art therapy into three medical and rehabilitation centers and launched City for Everyone.
+          </p>
+          <blockquote class="pull pull--small" data-reveal>
+            <p data-i18n="team.quote">“What I’m proudest of is not the numbers. It’s that for our volunteers, inclusion stopped being a word and became something they do.”</p>
+          </blockquote>
+          <p class="team__crew" data-reveal data-i18n="team.crew">
+            Built together with Nurgul, Kamila, Ayaulym, Akerke and volunteers across five departments. Thank you to our mentors Zhanagul Berikovna and Symbat Bolatbekkyzy, and to the psychologists of UMC Heart Center and NCCR who welcome us every time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN ------------------------------------------------------------ -->
+    <section class="section join" id="join">
+      <header class="section__head" data-reveal>
+        <span class="section__num">06</span>
+        <span class="eyebrow" data-i18n="join.eyebrow">Join us</span>
+      </header>
+      <div class="join__grid">
+        <div class="card-paper" data-reveal>
+          <h2 class="display display--small" data-i18n="join.vt">Volunteer</h2>
+          <ul class="ticks">
+            <li data-i18n="join.v1">Help children through art, media or events</li>
+            <li data-i18n="join.v2">Train with psychologists and grow real skills</li>
+            <li data-i18n="join.v3">Count it toward CAS / service hours</li>
+            <li data-i18n="join.v4">Get an official certificate for your contribution</li>
+          </ul>
+          <p class="muted" data-i18n="join.vhow">Fill in the application from our Instagram bio → interview with department leads → you’re in.</p>
+          <a class="btn" href="https://www.instagram.com/i.zhureq/" target="_blank" rel="noopener" data-i18n="join.vcta">Apply via Instagram</a>
+        </div>
+        <div class="card-paper card-paper--tilt" data-reveal>
+          <h2 class="display display--small" data-i18n="join.pt">Partner</h2>
+          <p data-i18n="join.p1">A hospital, rehabilitation center or school? We bring art therapy sessions to children and autism-awareness workshops to students.</p>
+          <p class="hand hand--note" data-i18n="join.p2">we bring the paints ♥</p>
+          <a class="btn btn--ghost" href="https://www.instagram.com/i.zhureq/" target="_blank" rel="noopener" data-i18n="join.pcta">Write to @i.zhureq</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">iZhureq</div>
+    <div class="footer__row">
+      <div>
+        <p class="footer__tag" data-i18n="footer.tag">A brave heart for every child.</p>
+        <p class="muted" data-i18n="footer.founded">Founded by Ayana Bektassova · Astana, Kazakhstan</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/i.zhureq/" target="_blank" rel="noopener">Instagram · @i.zhureq</a>
+        <a href="https://ibo.org/festival-of-hope/youth-in-action/izhureq?contentId=204725" target="_blank" rel="noopener" data-i18n="footer.ib">IB Festival of Hope</a>
+        <a href="#top" data-i18n="footer.top">Back to top ↑</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 iZhureq</p>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
